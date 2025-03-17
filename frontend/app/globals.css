@@ -4,3 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+body {
+  background-color: #eee;
+}
+
+  .bg{
+    background-image: url("../public/assets/bg.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .nav{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }

@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Funded trader",
-  description: "A full-stack funded trading propfirm",
+  title: 'Funded trader - Prove Your Trading Skills',
+  description: 'Unlock up to $100,000 and earn profits from your trading skills',
 };
 
 export default function RootLayout({ children }) {

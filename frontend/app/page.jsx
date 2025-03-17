@@ -1,9 +1,9 @@
-import React from 'react'
+import { Hero} from "@/constants";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <main>
+        <Hero />
+    </main>
+  );
 }
-
-export default Home
