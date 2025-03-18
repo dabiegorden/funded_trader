@@ -10,8 +10,8 @@ body {
 }
 
   .bg{
-    background-image: url("../public/assets/bg.jpeg");
-    height: 100vh;
+    background-image: url("../public/assets/bg_img.PNG");
+    height: 110vh;
     width: 100%;
     background-position: center;
     background-size: cover;

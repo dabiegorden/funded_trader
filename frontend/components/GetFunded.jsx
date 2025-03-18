@@ -10,7 +10,7 @@ const FundingSteps = () => {
         <h2 className="text-xl md:text-xl lg:text-2xl font-bold flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 pb-8">
           <span className="text-green-950">Get Funded In</span>
           <span className="flex items-center">
-            <span className="h-8 w-1 bg-green-400 mx-2 hidden md:block"></span>
+            <span className="h-8 w-1 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 mx-2 hidden md:block"></span>
             <span className="text-green-950">3 Easy Steps</span>
           </span>
         </h2>
@@ -18,9 +18,9 @@ const FundingSteps = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {steps.map((step, index) => (
-          <div key={index} className="flex flex-col bg-white h-full border border-green-400 rounded-lg relative">
+          <div key={index} className="flex flex-col bg-white h-full border border-blue-400 rounded-lg relative">
             <div className="flex justify-center -mt-10">
-              <div className={`${step.color} w-20 h-20 rounded-full flex items-center justify-center text-white text-4xl font-bold`}>
+              <div className={`bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 w-20 h-20 rounded-full flex items-center justify-center text-white text-4xl font-bold`}>
                 {step.number}
               </div>
             </div>

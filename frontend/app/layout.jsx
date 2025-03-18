@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Funded trader - Prove Your Trading Skills',
+  title: 'Fortune Edge Funding - Prove Your Trading Skills',
   description: 'Unlock up to $100,000 and earn profits from your trading skills',
 };
 

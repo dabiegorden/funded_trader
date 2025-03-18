@@ -8,7 +8,7 @@ import FundingOptionsSection from "@/components/FundingOptionsSection";
 import TradingPlanSelector from "@/components/TradingPlanSelector";
 import PayoutCertificatesCarousel from "@/components/PayoutCertificatesCarousel ";
 import ProveWorthySection from "@/components/ProveWorthySection";
-import DiscordCommunityBenefits from "@/components/DiscordCommunityBenefits";
+import TelegramCommunityBenefits from "@/components/TelegramCommunityBenefits";
 import ContactForm from "@/components/ContactForm";
 import TradeEliteBanner from "@/components/TradeEliteBanner";
 import Footer from "@/components/Footer";
@@ -24,7 +24,7 @@ export {
     TradingPlanSelector,
     PayoutCertificatesCarousel,
     ProveWorthySection,
-    DiscordCommunityBenefits,
+    TelegramCommunityBenefits,
     ContactForm,
     TradeEliteBanner,
     Footer
@@ -63,20 +63,20 @@ export const navbarLinks = [
 export const steps = [
     {
       number: "01",
-      title: "Take the Challenge",
-      description: "Show us that you can trade profitably and with discipline by reaching the profit targets set out in your 1-step or 2-step challenge.",
+      title: "Prove Your Trading Edge",
+      description: "Demonstrate your trading skills and discipline by hitting the profit targets in our 1-step or 2-step challenge. Show us you’ve got what it takes to succeed!",
       color: "bg-green-950" // Dark green for first step
     },
     {
       number: "02",
-      title: "Get Verified",
-      description: "Once you have passed your Equity Edge challenge, the next step is to verify your identity, also known as KYC (Know Your Customer).",
+      title: "Complete Verification",
+      description: "After passing the challenge, verify your identity through our simple KYC (Know Your Customer) process. It’s quick, secure, and gets you one step closer to becoming a funded trader.",
       color: "bg-green-600" // Medium green for second step
     },
     {
       number: "03",
-      title: "Become a Funded Trader",
-      description: "You will now get your live Equity Edge account details and start generating commissions from all of your simulated profits. You can also scale your Equity Edge account up to $2 million, earning up to a 90% split on all net simulated profits that you generate via our scaling plan.",
+      title: "Start Trading with Fortune Edge",
+      description: "Once verified, you’ll receive your live Fortune Edge account details. Start earning up to 90% of your simulated profits and scale your account up to $2 million with our proven scaling plan. Your trading journey begins here!",
       color: "bg-green-400" // Lighter green for third step
     }
   ];
@@ -138,4 +138,27 @@ import { Calendar, Target, ArrowUpRight, DollarSign, Users, Ban, LineChart, Cale
     }
   ];
 
-  
+// Telegram Benefits
+import { Brain, Trophy, HeadphonesIcon} from 'lucide-react';
+export const benefits = [
+  {
+    Icon: Brain,
+    title: 'Trading Mindset',
+    description: 'Develop the right mindset to succeed in trading with insights and tips from Fortune Edge Funding’s experts.',
+  },
+  {
+    Icon: Trophy,
+    title: 'Challenges & Rewards',
+    description: 'Participate in exclusive challenges like 1 Step Fortune and Instant Funding to unlock rewards and funding opportunities.',
+  },
+  {
+    Icon: HeadphonesIcon,
+    title: '24/7 Support',
+    description: 'Get round-the-clock support from our team to help you navigate your trading journey with Fortune Edge Funding.',
+  },
+  {
+    Icon: LineChart,
+    title: 'Market Insights',
+    description: 'Access daily market analysis, trading strategies, and exclusive content tailored for Fortune Edge traders.',
+  },
+];
