@@ -11,6 +11,7 @@ import ProveWorthySection from "@/components/ProveWorthySection";
 import TelegramCommunityBenefits from "@/components/TelegramCommunityBenefits";
 import ContactForm from "@/components/ContactForm";
 import TradeEliteBanner from "@/components/TradeEliteBanner";
+import EquityEdgePayout from "@/components/EguityEdgePayout";
 import Footer from "@/components/Footer";
 
 export {
@@ -27,6 +28,7 @@ export {
     TelegramCommunityBenefits,
     ContactForm,
     TradeEliteBanner,
+    EquityEdgePayout,
     Footer
 }
 
@@ -64,19 +66,19 @@ export const steps = [
     {
       number: "01",
       title: "Prove Your Trading Edge",
-      description: "Demonstrate your trading skills and discipline by hitting the profit targets in our 1-step or 2-step challenge. Show us you’ve got what it takes to succeed!",
+      description: "Showcase your trading skill, discipline, and consistency by meeting the profit targets outlined in our Instant Funding or 1-Step Challenge Unlock the opportunity to trade with our capital and take your trading career to the next level.",
       color: "bg-green-950" // Dark green for first step
     },
     {
       number: "02",
       title: "Complete Verification",
-      description: "After passing the challenge, verify your identity through our simple KYC (Know Your Customer) process. It’s quick, secure, and gets you one step closer to becoming a funded trader.",
+      description: "Once you successfully achieve your profit targets, the next step in the process is identity verification, commonly referred to as KYC (Know Your Customer). This essential step ensures compliance, security, and a seamless transition toward managing your funded account",
       color: "bg-green-600" // Medium green for second step
     },
     {
       number: "03",
-      title: "Start Trading with Fortune Edge",
-      description: "Once verified, you’ll receive your live Fortune Edge account details. Start earning up to 90% of your simulated profits and scale your account up to $2 million with our proven scaling plan. Your trading journey begins here!",
+      title: "Get Funded",
+      description: "You will now get your Funded account details and start generating commissions from all of your simulated profits, earning up to 80% split on all net simulated profits that you generate on your account",
       color: "bg-green-400" // Lighter green for third step
     }
   ];
@@ -89,17 +91,17 @@ import { Calendar, Target, ArrowUpRight, DollarSign, Users, Ban, LineChart, Cale
       title: "Why Should You Join Equity Edge",
       features: [
         {
-          icon: <Ban className="w-8 h-8 text-green-500" />,
+          icon: <Ban className="w-8 h-8 text-white" />,
           title: "Trade Your Way",
           description: "Hold positions during news, keep trades over the weekend, and trade with lot sizes as large as your leverage allows. Flexibility at your fingertips!"
         },
         {
-          icon: <CalendarDays className="w-8 h-8 text-green-500" />,
+          icon: <CalendarDays className="w-8 h-8 text-white" />,
           title: "Unlimited Trading Days",
           description: "...Hence, we let our traders pass our challenges at their own pace."
         },
         {
-          icon: <RefreshCw className="w-8 h-8 text-green-500" />,
+          icon: <RefreshCw className="w-8 h-8 text-white" />,
           title: "Industry Best Profit Share",
           description: "Your success is our success. We understand and value your hard work and dedication with up to a 90% profit split."
         }
@@ -145,11 +147,6 @@ export const benefits = [
     Icon: Brain,
     title: 'Trading Mindset',
     description: 'Develop the right mindset to succeed in trading with insights and tips from Fortune Edge Funding’s experts.',
-  },
-  {
-    Icon: Trophy,
-    title: 'Challenges & Rewards',
-    description: 'Participate in exclusive challenges like 1 Step Fortune and Instant Funding to unlock rewards and funding opportunities.',
   },
   {
     Icon: HeadphonesIcon,

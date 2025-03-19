@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 
 const FundingOptionsSection = () => {
@@ -16,14 +15,8 @@ const FundingOptionsSection = () => {
 
       <div className="max-w-4xl mx-auto">
         <p className="text-center text-gray-800 text-lg md:text-xl leading-relaxed">
-          Choose from our flexible funding programs: **1 Step Fortune** or **Instant Funding**, available for both Forex and Synthetic Indices. Whether you're looking for a quick start or a structured challenge, we provide multiple paths to help you succeed and grow your trading career.
+        We provide traders with diverse funding opportunities through our Instant Funding and 1-Step Challenge programs. Whether you prefer to prove your skills through a structured evaluation or start trading with capital immediately, our programs are designed to support your growth and success in a competitive trading environment.
         </p>
-      </div>
-
-      <div className="mt-12 flex justify-center">
-        <Link href={"/"} className="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-400 transition">
-          Compare Options
-        </Link>
       </div>
     </section>
   );

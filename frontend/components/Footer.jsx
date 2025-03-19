@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { FaTelegram } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -50,9 +51,6 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="space-y-4">
-                <Link href="/mindset" className="block hover:text-blue-500 transition-colors">
-                  Mindset
-                </Link>
                 <Link href="/faq" className="block hover:text-blue-500 transition-colors">
                   FAQ
                 </Link>
@@ -102,6 +100,12 @@ const Footer = () => {
                   className="hover:text-blue-500 transition-colors"
                 >
                   <FiInstagram size={24} />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/fortuneedgefunding?igsh=MWxuN2NuN2o4a2hsYw%3D%3D&utm_source=qr"
+                  className="hover:text-blue-500 transition-colors"
+                >
+                  <FaWhatsapp size={24}/>
                 </Link>
               </div>
             </div>

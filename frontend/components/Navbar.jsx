@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Desktop CTA Buttons */}
         <div className="hidden md:flex gap-4">
-          <Link href={"/get-funded"} className="bg-slate-50 py-2 px-4 rounded-full text-[1.03rem] text-blue-700">
+          <Link href={"/pricing"} className="bg-slate-50 py-2 px-4 rounded-full text-[1.03rem] text-blue-700">
             Get Funded
           </Link>
           <Link href={"/sign-in"} className="border-[2px] border-slate-50 py-2 px-4 rounded-full text-[1.03rem] text-slate-50">

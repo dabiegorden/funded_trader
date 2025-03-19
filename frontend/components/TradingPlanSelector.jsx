@@ -4,44 +4,44 @@ import React, { useState } from 'react';
 
 const TradingPlanSelector = () => {
   const [activePlan, setActivePlan] = useState("1 Step Fortune");
-  const [activeAmount, setActiveAmount] = useState("2.5K");
+  const [activeAmount, setActiveAmount] = useState("5K");
   const [activeMarket, setActiveMarket] = useState("FOREX");
   
   const planTypes = ["1 Step Fortune", "Instant Funding"];
-  const accountSizes = ["2.5K", "5K", "10K", "25K", "50K", "100K", "200K"];
+  const accountSizes = ["5K", "10K", "25K", "50K", "100K", "200K"];
   const marketTypes = ["FOREX", "SYNTHETIC"];
   
-  // Data for each plan type
+  // Updated data for each plan type
   const planData = {
     "1 Step Fortune": {
       phase1: {
         tradingPeriod: "Unlimited",
-        minTradingDays: "2 Days",
-        maxDailyLoss: "4%",
-        maxTrailingLoss: "6%",
+        minTradingDays: "5 Days",
+        maxDailyLoss: "5%",
+        maxTrailingLoss: "10%",
         profitTarget: "10%",
-        leverageFX: "1:40 (Fx), 1:15 (Metals), 1:15 (Indices)",
-        leverageCrypto: "1:2"
+        leverageFX: "1:100",
+        leverageCrypto: "1:100"
       },
       funded: {
         tradingPeriod: "Unlimited",
-        minTradingDays: "2 Days",
-        maxDailyLoss: "4%",
-        maxTrailingLoss: "6%",
+        minTradingDays: "5 Days",
+        maxDailyLoss: "5%",
+        maxTrailingLoss: "10%",
         profitTarget: "-",
-        leverageFX: "1:40(Fx), 1:15(Metals), 1:15(Indices)",
-        leverageCrypto: "1:2"
+        leverageFX: "1:100",
+        leverageCrypto: "1:100"
       }
     },
     "Instant Funding": {
       funded: {
         tradingPeriod: "Unlimited",
-        minTradingDays: "2 Days",
-        maxDailyLoss: "4%",
-        maxTrailingLoss: "6%",
+        minTradingDays: "5 Days",
+        maxDailyLoss: "5%",
+        maxTrailingLoss: "10%",
         profitTarget: "-",
-        leverageFX: "1:40(Fx), 1:15(Metals), 1:15(Indices)",
-        leverageCrypto: "1:2"
+        leverageFX: "1:100",
+        leverageCrypto: "1:100"
       }
     }
   };
@@ -88,11 +88,6 @@ const TradingPlanSelector = () => {
 
   // Get current price based on selections
   const getCurrentPrice = () => {
-    // Handle 2.5K which isn't in the pricing data
-    if (activeAmount === "2.5K") {
-      return "Contact for pricing";
-    }
-    
     try {
       return pricingData[activePlan][activeMarket][activeAmount] || "Contact for pricing";
     } catch (error) {
@@ -124,8 +119,7 @@ const TradingPlanSelector = () => {
       { label: "Maximum Daily Loss", key: "maxDailyLoss" },
       { label: "Maximum Loss (Trailing)", key: "maxTrailingLoss" },
       { label: "Profit Target", key: "profitTarget" },
-      { label: "Leverage (FX)", key: "leverageFX" },
-      { label: "Leverage (Crypto)", key: "leverageCrypto" }
+      { label: "Leverage", key: "leverageFX" }
     ];
 
     return rows.map((row, index) => (

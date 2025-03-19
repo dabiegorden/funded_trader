@@ -166,9 +166,9 @@ export default function FAQPage() {
       answer: (
         <div>
           <p className="mb-2">After registration, every user has access to their unique referral link.</p>
-          <p className="mb-2">For every account purchased by your referrals, you earn 5%.</p>
+          <p className="mb-2">For every account purchased by your referrals, you earn up to 15%.</p>
           <p className="mb-2">This commission can be withdrawn anytime.</p>
-          <p><strong>Minimum withdrawal:</strong> $50</p>
+          <p><strong>Minimum withdrawal:</strong> $100</p>
         </div>
       )
     }

@@ -39,23 +39,6 @@ export default function AffiliatePage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-white shadow-lg">
-        <div className="container mx-auto py-6 px-4">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">Fortune Edge Funding</h1>
-            <nav>
-              <ul className="flex space-x-6">
-                <li><Link href="/" className="hover:text-blue-100">Home</Link></li>
-                <li><Link href="/about" className="hover:text-blue-100">About</Link></li>
-                <li><Link href="/affiliate" className="font-bold border-b-2 border-white">Affiliate Program</Link></li>
-                <li><Link href="/contact" className="hover:text-blue-100">Contact</Link></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-white py-16">
         <div className="container mx-auto px-4 text-center">
@@ -112,13 +95,13 @@ export default function AffiliatePage() {
               <tbody>
                 <tr className="border-b">
                   <td className="py-4 px-6">Standard</td>
-                  <td className="py-4 px-6">10%</td>
+                  <td className="py-4 px-6">5%</td>
                   <td className="py-4 px-6">New affiliates</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
                   <td className="py-4 px-6">Premium</td>
-                  <td className="py-4 px-6">12%</td>
-                  <td className="py-4 px-6">5+ successful referrals</td>
+                  <td className="py-4 px-6">10%</td>
+                  <td className="py-4 px-6">10+ successful referrals</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-6">Elite</td>
@@ -258,74 +241,36 @@ export default function AffiliatePage() {
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">How do I get paid?</h3>
-              <p>We process payments monthly via PayPal, bank transfer, or cryptocurrency. The minimum payout threshold is $100.</p>
+              <p>We process payments instantly via cryptocurrency. The minimum payout threshold is $100.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">When do I receive my commissions?</h3>
-              <p>Commissions are paid on the 15th of each month for the previous month's referrals.</p>
+              <p>Commissions are paid instantly upon achieving the minimum threshold.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">What marketing materials are available?</h3>
               <p>We provide a variety of banners, email templates, and promotional content in your affiliate dashboard.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">How long does the referral cookie last?</h3>
-              <p>Our referral cookies last for 90 days, giving you ample time to earn commissions from your referrals.</p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Affiliates Say</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <p className="mb-4 italic">"I've been an affiliate with Fortune Edge Funding for 6 months now, and I've already earned over $5,000. Their commission structure is one of the best in the industry!"</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">MS</div>
-                <div>
-                  <h4 className="font-bold">Michael Smith</h4>
-                  <p className="text-sm text-gray-600">Financial Blogger</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <p className="mb-4 italic">"What I love most about Fortune Edge Funding's affiliate program is how easy it is to track my referrals and earnings. Their dashboard is intuitive and their support team is always helpful."</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">AJ</div>
-                <div>
-                  <h4 className="font-bold">Amanda Johnson</h4>
-                  <p className="text-sm text-gray-600">Trading Influencer</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <p className="mb-4 italic">"The promotional materials provided by Fortune Edge Funding are top-notch. My conversion rates have improved significantly since I started using their tailored banners and email templates."</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">DP</div>
-                <div>
-                  <h4 className="font-bold">David Peterson</h4>
-                  <p className="text-sm text-gray-600">Investment Coach</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Earning?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Join our affiliate program today and start earning generous commissions for every successful referral.</p>
-          <button 
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          Partner with us and unlock one of the most rewarding prop firm affiliate programs available. Earn up to 15% of the revenue from every trader you refer. Whether you're a trading influencer, educator, or community leader, our affiliate program offers a lucrative and sustainable income opportunity while helping traders access top-tier funding.
+          </p>
+          <Link
+            href={"/sign-up"} 
             onClick={() => document.getElementById('register-section').scrollIntoView({ behavior: 'smooth' })}
             className="bg-white text-blue-600 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-50 transition duration-300"
           >
             Sign Up Now
-          </button>
+          </Link>
         </div>
       </section>
 

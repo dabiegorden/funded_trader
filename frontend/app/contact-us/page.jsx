@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Clock, MessageCircle, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -65,7 +66,7 @@ export default function ContactPage() {
               <Mail className="text-white" size={24} />
             </div>
             <h3 className="text-xl font-bold mb-2">Email Us</h3>
-            <p className="text-gray-600 mb-4">We'll respond within 24 hours</p>
+            <p className="text-gray-600 mb-4">We'll respond within 1 hours</p>
             <a href="mailto:support@fortuneedgefunding.com" className="text-blue-600 hover:underline">
               support@fortuneedgefunding.com
             </a>
@@ -73,7 +74,7 @@ export default function ContactPage() {
 
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 rounded-full flex items-center justify-center mb-4">
-              <Phone className="text-white" size={24} />
+              <FaWhatsapp className="text-white" size={24} />
             </div>
             <h3 className="text-xl font-bold mb-2">Call Us</h3>
             <p className="text-gray-600 mb-4">Mon-Fri, 9am-5pm (GMT)</p>
@@ -201,7 +202,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-500">Response Time</p>
                     <p className="text-lg font-medium">
-                      {activeTab === 'general' && 'Within 24 hours'}
+                      {activeTab === 'general' && 'Within 1 hour'}
                       {activeTab === 'funding' && 'Within 12 hours'}
                       {activeTab === 'support' && 'Within 6 hours'}
                       {activeTab === 'billing' && 'Within 24 hours'}
@@ -366,43 +367,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-12 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3">How quickly can I get funded?</h3>
-              <p className="text-gray-700">
-                With our Instant Funding program, you can get funded immediately after completing your registration and making your payment. Our 1 Step Fortune program requires a brief evaluation period which typically takes 1-2 business days.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3">What trading platforms do you support?</h3>
-              <p className="text-gray-700">
-                We currently support MT4, MT5, and cTrader platforms for both our Forex and Synthetic Indices accounts. Each platform offers unique features to enhance your trading experience.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3">How do I receive my profits?</h3>
-              <p className="text-gray-700">
-                Profit payouts are processed bi-weekly. You can choose to receive your profits via bank transfer, PayPal, or cryptocurrency. The minimum payout amount is $100.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3">What is the profit split?</h3>
-              <p className="text-gray-700">
-                Our standard profit split is 80/20, meaning you keep 80% of the profits and we retain 20%. High-performing traders may qualify for our premium 90/10 split after consistent performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Call to Action */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-white">
         <div className="max-w-5xl mx-auto text-center">
@@ -411,7 +375,7 @@ export default function ContactPage() {
             Join thousands of funded traders who have already taken the first step toward financial freedom with Fortune Edge Funding.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href={"/get-funded"} className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors duration-300">
+            <Link href={"/pricing"} className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors duration-300">
               View Funding Programs
             </Link>
           </div>

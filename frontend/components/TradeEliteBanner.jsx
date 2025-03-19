@@ -9,13 +9,14 @@ const TradeEliteBanner = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 rounded-full opacity-30 translate-x-1/4 translate-y-1/4" />
       
       <div className="relative max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-50 mb-12">
-          Unlock Your Trading Potential<br />With Fortune Edge Funding
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-50 mb-12 capitalize">
+        Your skills, Our Capital<br />
+        Take the risk, keep the rewards!
         </h2>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Link href="/get-funded" className="px-12 py-4 bg-blue-900 font-semibold rounded-full hover:bg-blue-800 transition-colors duration-300 cursor-pointer text-slate-50">
-              Start Your Challenge
+          <Link href="/pricing" className="px-12 py-4 bg-blue-900 font-semibold rounded-full hover:bg-blue-800 transition-colors duration-300 cursor-pointer text-slate-50">
+          Get Funded
           </Link>
           
           <Link href="https://t.me/fortuneedgefunding" className="px-12 py-4 bg-transparent text-slate-50 font-semibold rounded-full border-2 border-blue-900 hover:bg-blue-900 hover:text-blue-500 transition-colors duration-300 cursor-pointer">

@@ -8,15 +8,15 @@ const StatsBar = () => {
   // Organize stats into categories
   const highlights = [
     {
-      title: "90%",
-      description: "Receive up to 90% of your simulated profits"
+      title: "80%",
+      description: "Receive up to 80% of your simulated profits"
     },
     {
       title: "180+",
       description: "Countries"
     },
     {
-      title: "48 h",
+      title: "72 h",
       description: "Avg payout processing time"
     }
   ];

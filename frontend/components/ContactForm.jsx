@@ -36,8 +36,8 @@ const ContactForm = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
             
             <p className="text-lg text-gray-700 mb-8">
-              Have questions about our **1 Step Fortune** or **Instant Funding** programs? 
-              Ready to take the next step in your trading journey with Fortune Edge Funding? 
+              Have questions about our funding programs?<br />
+              Ready to take the next step in your trading journey with Fortune Edge Funding?<br /> 
               Our team is here to help. Whether you're exploring funding opportunities or need 
               support, we're just a message away. Reach out to us, and we'll get back to you promptly. 
               Your success is our priority.
@@ -58,8 +58,7 @@ const ContactForm = () => {
                   <MapPin className="text-white" size={24} />
                 </div>
                 <address className="not-italic text-lg font-medium">
-                Barton Court, 56 High Street, Canterbury,
-                Kent, England, CT1 2AZ
+                Barton Court, 56 High Street, Canterbury, Kent, UK, CT1 2AZ
                 </address>
               </div>
             </div>

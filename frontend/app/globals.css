@@ -4,6 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 body {
   background-color: #eee;
@@ -20,4 +24,8 @@ body {
   .nav{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+  }
+
+  .btn:hover{
+     transform: scale(1.1);
   }
