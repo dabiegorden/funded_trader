@@ -17,7 +17,7 @@ const Hero = () => {
     Join Fortune Edge Funding Today
   </h2> */}
   
-  <p className="max-w-3xl text-lg md:text-xl mb-8 md:mb-12 text-white bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 py-4 px-4 rounded-md">
+  <p className="max-w-3xl text-lg md:text-xl mb-8 md:mb-12 text-slate-50">
     Take your trading to the next level with funding of up to $200,000. Whether you specialize in Forex trading or Deriv synthetic indices, trade without financial risk and keep up to 80% of your profits.
   </p>
   
